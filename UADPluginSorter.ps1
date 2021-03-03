@@ -62,8 +62,14 @@ Press Enter to continue.."
 #Start-Sleep 3
 #[System.Windows.Forms.SendKeys]::SendWait('^{s}')
 
-Read-Host -Prompt "
-Now click Save Detailed System Profile and save to Desktop.
+Write-Host "Open " -NoNewline
+Write-Host "UAD Control Panel" -ForegroundColor Yellow -NoNewline
+Write-Host " and select " -NoNewline
+Write-Host "System Info" -ForegroundColor Yellow -NoNewLine
+Write-Host ".
+Select " -NoNewLine
+Write-Host "Save Detailed System Profile" -ForegroundColor Yellow -NoNewLine
+Read-Host -Prompt " and save to Desktop or Script Directory.
 
 Hit Enter when done"
 
